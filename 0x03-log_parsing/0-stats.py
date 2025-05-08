@@ -20,7 +20,8 @@ try:
             total_size += file_size
 
             if status_code in status_code_list:
-                status_code_dict[status_code] = status_code_dict.get(status_code, 0) + 1
+                status_code_dict[status_code] = status_code_dict.get(
+                        status_code, 0) + 1
 
         except (IndexError, ValueError):
             continue
